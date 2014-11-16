@@ -2,11 +2,7 @@ Assignment 1 for Reproducible Research
 ========================================================
 ## Loading and preprocessing the data
 
-Data file is in the working directory.
-
 ```{r, echo = TRUE}
-#setwd("W:/BaiduYun/MOOC/DataScience/ReproResearch/Project") #work
-#setwd("E:/WebDrive/Baidu/MOOC/DataScience/ReproResearch/Project") #home
 dat1 <- read.csv("activity.csv")
 ```
 
