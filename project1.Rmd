@@ -1,3 +1,8 @@
+---
+output:
+  html_document:
+    keep_md: yes
+---
 Assignment 1 for Reproducible Research
 ========================================================
 ## Loading and preprocessing the data
@@ -61,7 +66,6 @@ median(stepsnewperday, na.rm= TRUE)
 ```{r, echo = TRUE}
 # 1. Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether #a given date is a weekday or weekend day.
 
-as.Date(datnew$date, "%Y-%m-%d")
 ldate <- weekdays(as.Date(datnew$date, "%Y-%m-%d"))
 for (i in 1 : length(ldate)) {
   if((ldate[i] == "Saturday") | (ldate[i] == "Sunday")) ldate[i] <- "weekend"
